@@ -1,7 +1,7 @@
 *{
  font-family:  "Inter", sans-serif;
- margin: 0 auto;
- padding: 0;
+ margin: 0 auto ;
+ padding: 0 ;
  box-sizing: border-box;
 
 }
@@ -17,10 +17,10 @@ nav{
              
 }
 
-nav>p{
+nav > p{
       color:white;
       font-size: 36px;
-      padding: 20px;
+      padding: 100px;
       
       
 }
@@ -66,6 +66,10 @@ nav>p{
 .banner{
     width: 1600px;
     height: 760px; 
+}
+
+.banner img{
+    width: 100%;
 }
 
 .banner-circle img{
@@ -150,7 +154,7 @@ border-radius: 15px;
          flex-direction: row;
          justify-content: space-around;
           align-items: center;
-         margin-top: -220px ;
+         margin-top: -260px ;
          color:white;
 }
 .about-container h2{
@@ -158,25 +162,176 @@ border-radius: 15px;
          color: #00FF88;
 }
 
+/* Why choose techwave design  */
+
+#techwave-features{
+    width: 1600px;
+    height:1121px;
+    background-color: rgba(35, 14, 61,1);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding: 120px 200px;
+}
+
+#techwave-features h1{
+       font-size: 48px;
+       font-weight: 700;
+       color: white;
+}
+
+.card-container>*{
+      border: 1px solid gold;
+       padding: 25px;
+}
+
+      
+      
+
+
+.card1{
+    width:380px;
+    height:480px;
+    background-color:rgba(53,17,101,0.4);
+    color:white;
+    padding: 40px;
+    border-radius: 40px;
+
+}
+
+.card2{
+    width: 790px;
+    height: 225px;
+    background-color:rgba(53,17,101,0.4);
+    color:white;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.card3{
+    width: 790px;
+    height: 225px;
+    background-color:rgba(53,17,101,0.4);
+    color:white;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.card4{
+     width: 790px;
+    height: 225px;
+     background-color:rgba(53,17,101,0.4);
+    color:white;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+
+.card5{
+    width:380px;
+    height:223px;
+    background-color:rgba(53,17,101,0.4);
+    color:white;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+
+.card-container{
+      width: 1200px;
+      height: 783px;
+      display: grid;
+      background-color: ;
+      grid-template-areas: 
+      "card1  card2 card2"
+      "card1  card3 card3"
+      "card4  card4 card5"
+      ;
+}
+
+/* feature card design  */
+#feature-episode{
+       width: 1600px;
+       height: 1277px;
+       background-color: rgba(26,11,46,1);
+        
+       
+    
+}
+
+#feature-episode h1{
+           font-size: 48px;
+           font-weight: 700;
+           color:white;
+           text-align: center;
+           color: white;
+           padding: 50px;
+       
+    
+}
+
+.episode-cards{
+    width:1200 px;
+    height: 539px;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.feature-card{
+     width: 380px;
+    height: 440px; 
+    background-color: #250D44;
+    border-radius: 10px;
+    border: 1px solid gold; 
+}
+
 /* Responsive design for small device */
 @media screen and (max-width: 576px) {
                 .navbar{
                     display: none;
                 }
-                     nav{
+                      nav{
                       align-items: center;
-                     }
+                     } 
                 nav > span{
               display: block;
+              font-size: 24px;
+              
+              
                }
-              .btn{
+                nav .btn{
                 display: none;
-              }
-               
-            
+               }
+             
+
+  }
+
   
 
-} 
+
+             
 
     
 
