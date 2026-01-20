@@ -5,7 +5,7 @@
  box-sizing: border-box;
 
 }
-
+/* navbar design start  */
 nav{
    background-color: #1A0B2E;
              max-width: 1600px;
@@ -34,13 +34,11 @@ nav > p{
     
 } 
 
-
 .navbar{
     font-size: 16px;
     color:white;
     display: flex;
     gap: 30px;
-    margin-left: 120px;
     align-items: center;
     justify-content: center;
     
@@ -58,13 +56,19 @@ nav > p{
     border-radius: 15px;
     border: none;
     cursor:pointer;
+    transition: width 5s linear 3s;
     
 } 
+.btn:hover{
+    width: 150px;
+}
+/* navbar design end  */
 
-/* banner design */
+/* banner design start */
 
 .banner{
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     height: 760px; 
 }
 
@@ -81,7 +85,17 @@ nav > p{
     margin-left: 615px;
 }
 
-
+.badge-right{
+    background-color: #00FF88;
+    position: absolute;
+    right: 0;
+    margin-top: -320px;
+    margin-right: 580px;
+    border-radius: 10px;
+    padding:10px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 .banner-microphone{
        position: relative;
@@ -119,15 +133,18 @@ nav > p{
 }
 
 .btn-secondary{
-    padding:12px 20px;
-background: var(--#00FF88, rgba(0, 255, 136, 1));
+padding:12px 20px;
+background-color: transparent;
+border: 1px solid rgba(0, 255, 136, 1);
 border-radius: 15px;
-
+color:white;
 
 }
+/* banner design end  */
 
+/* about section  start  */
 .about-section{
-    width: 1600px;
+    max-width: 1600px;
     height: 646px;
     background-color: #1A0B2E;
     display: flex;
@@ -162,10 +179,12 @@ border-radius: 15px;
          color: #00FF88;
 }
 
-/* Why choose techwave design  */
+/* about section  end */
+
+/* Why choose techwave design start */
 
 #techwave-features{
-    width: 1600px;
+    max-width: 1600px;
     height:1121px;
     background-color: rgba(35, 14, 61,1);
     display:flex;
@@ -269,8 +288,9 @@ border-radius: 15px;
       "card4  card4 card5"
       ;
 }
+/* Why choose techwave design end */
 
-/* feature card design  */
+/* feature card design start  */
 #feature-episode{
        width: 1600px;
        height: 1277px;
@@ -292,7 +312,7 @@ border-radius: 15px;
 }
 
 .episode-cards{
-    width:1200 px;
+    width:1200px;
     height: 539px;
     color:white;
     display: grid;
@@ -306,15 +326,74 @@ border-radius: 15px;
     border-radius: 10px;
     border: 1px solid gold; 
 }
+ /* feature card design start  */
+ 
+ /* challnge part start  */
+.host-container{
+    width:1200px;
+    height:280px;
+    padding:40px;
+    background-color: rgba(53,17,101,0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    gap: 24px;
 
+}
+
+.host-container h3{
+            font-size: 32px;
+            font-weight: 700;
+            color:white;
+}
+
+.host-container p{
+            font-size: 16px;
+            font-weight: 400;
+            color:white;
+}
+
+.socialicon-img{
+   margin-left: 430px;
+   margin-top: -80px;
+   padding:20px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+/* challnge part end  */
+
+/* footer design start  */
+.footer-container{
+     margin-left: 80px;
+     margin-top: -300px;
+     display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.footer-container h1{
+        font-size: 80px;
+        font-weight: 700;
+        color:white;
+}
+
+.footer-container i{
+    color:white;
+}
+
+.footer-container h5{
+          color:white;
+}
 /* Responsive design for small device */
 @media screen and (max-width: 576px) {
                 .navbar{
                     display: none;
                 }
-                      nav{
-                      align-items: center;
-                     } 
+                    
                 nav > span{
               display: block;
               font-size: 24px;
@@ -324,11 +403,18 @@ border-radius: 15px;
                 nav .btn{
                 display: none;
                }
-             
 
-  }
+           
+ }
 
+ /* footer design end  */
   
+
+  /* Responsive design for large device */
+
+    @media screen  (min-width: 576px) and (max-width:1200px) {
+                              
+}
 
 
              
